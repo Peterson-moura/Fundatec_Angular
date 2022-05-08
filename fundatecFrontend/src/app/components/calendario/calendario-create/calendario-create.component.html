@@ -1,11 +1,13 @@
 <mat-card>
    <mat-card-title>
       Agendamento
-      <form>         
+      <form> 
+         
+         
 
          
-         <mat-form-field>            
-            <p>Selecione o Curso</p>            
+         <mat-form-field > 
+            <p>Selecione o Curso</p>                       
             <select placeholder="Selecione o Curso" [(ngModel)]="calender.Curso" name="curso">
                <option selected>Técnico em Administração</option>
                <option>Técnico em Informática</option>
@@ -73,6 +75,6 @@
    Salvar
 </button>
 
-<button mat-raised-button (click)="cancel()">
+<button mat-raised-button color="warn" (click)="cancel()">
    Cancelar
 </button>

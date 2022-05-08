@@ -89,6 +89,15 @@
       "Professor": "Beatrice",
       "Data": "2022-05-28",
       "id": 13
+    },
+    {
+      "Curso": "Técnico em Enfermagem",
+      "Turma": "Banco de Dados",
+      "Turno": "Noite",
+      "Disciplina": "",
+      "Professor": "Daniel",
+      "Data": "2022-05-28",
+      "id": 14
     }
   ]
 }
