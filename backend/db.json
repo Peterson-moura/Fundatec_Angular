@@ -4,8 +4,8 @@
       "Curso": "Técnico em Informática",
       "Turma": "TA 12",
       "Turno": "Manhã",
-      "Disciplina": "Banco de Dados",
-      "Professor": "Daniel",
+      "Disciplina": "Lógica",
+      "Professor": "Beatrice",
       "Data": "2022-05-09",
       "id": 4
     },
@@ -28,22 +28,31 @@
       "id": 6
     },
     {
-      "Curso": "Técnico em Administração",
-      "Turma": "TE 16",
+      "Curso": "Técnico em Enfermagem",
+      "Turma": "TE 14",
       "Turno": "Noite",
-      "Disciplina": "Lógica",
-      "Professor": "Beatrice",
+      "Disciplina": "Desenvolvimento Web I",
+      "Professor": "Elias",
       "Data": "2022-05-27",
       "id": 7
     },
     {
       "Curso": "Técnico em Segurança do Trabalho",
-      "Turma": "TST 6",
-      "Turno": "Tarde",
-      "Disciplina": "Desenvolvimento Web I",
-      "Professor": "Beatrice",
-      "Data": "2022-06-04",
+      "Turma": "TE 16",
+      "Turno": "Noite",
+      "Disciplina": "Lingua Estrangeira",
+      "Professor": "Daniel",
+      "Data": "2022-06-11",
       "id": 8
+    },
+    {
+      "Curso": "Técnico em Segurança do Trabalho",
+      "Turma": "TI 18",
+      "Turno": "Noite",
+      "Disciplina": "Banco de Dados",
+      "Professor": "Beatrice",
+      "Data": "2022-05-20",
+      "id": 9
     }
   ]
 }
