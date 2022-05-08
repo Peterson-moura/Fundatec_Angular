@@ -26,6 +26,24 @@
       "Professor": "Elias",
       "Data": "2022-05-07",
       "id": 6
+    },
+    {
+      "Curso": "Técnico em Administração",
+      "Turma": "TE 16",
+      "Turno": "Noite",
+      "Disciplina": "Lógica",
+      "Professor": "Beatrice",
+      "Data": "2022-05-27",
+      "id": 7
+    },
+    {
+      "Curso": "Técnico em Segurança do Trabalho",
+      "Turma": "TST 6",
+      "Turno": "Tarde",
+      "Disciplina": "Desenvolvimento Web I",
+      "Professor": "Beatrice",
+      "Data": "2022-06-04",
+      "id": 8
     }
   ]
 }
