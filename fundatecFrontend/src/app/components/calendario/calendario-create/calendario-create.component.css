@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+button{
+    
+    margin-top: 20px;
+    margin-right: 15px
+}
+
+select{
+    padding: 0%;
+    padding-bottom: 10px;
+}
+
+.mat-form-field{
+padding: auto;
+
+margin-top: auto;
+}
+
