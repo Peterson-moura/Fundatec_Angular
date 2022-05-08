@@ -98,6 +98,33 @@
       "Professor": "Daniel",
       "Data": "2022-05-28",
       "id": 14
+    },
+    {
+      "Curso": "Técnico em Enfermagem",
+      "Turma": "Banco de Dados",
+      "Turno": "Tarde",
+      "Disciplina": "",
+      "Professor": "Beatrice",
+      "Data": "2022-05-28",
+      "id": 15
+    },
+    {
+      "Curso": "",
+      "Turma": "Fundamentos de informática",
+      "Turno": "",
+      "Disciplina": "",
+      "Professor": "",
+      "Data": "2022-05-20",
+      "id": 16
+    },
+    {
+      "Curso": "Técnico em Informática",
+      "Turma": "TI 18",
+      "Turno": "Noite",
+      "Disciplina": "Banco de Dados",
+      "Professor": "Beatrice",
+      "Data": "2022-05-21",
+      "id": 17
     }
   ]
 }

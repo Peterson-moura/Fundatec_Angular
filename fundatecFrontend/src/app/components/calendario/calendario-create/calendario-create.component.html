@@ -1,13 +1,13 @@
 <mat-card>
    <mat-card-title>
       Agendamento
-      <form> 
-         
-         
+      <form>
 
-         
-         <mat-form-field > 
-            <p>Selecione o Curso</p>                       
+
+
+
+         <mat-form-field>
+            <p>Selecione o Curso</p>
             <select placeholder="Selecione o Curso" [(ngModel)]="calender.Curso" name="curso">
                <option selected>Técnico em Administração</option>
                <option>Técnico em Informática</option>
@@ -19,7 +19,7 @@
 
          <mat-form-field>
             <p>Selecione a Turma</p>
-            <select [(ngModel)]="calender.Turma" name="turma" class="form-select" >
+            <select [(ngModel)]="calender.Turma" name="turma" class="form-select">
                <p>Selecione o Curso</p>
                <option>TA 12</option>
                <option>TE 16</option>
@@ -42,7 +42,7 @@
 
          <mat-form-field>
             <p>Selecione o Disciplina</p>
-            <select [(ngModel)]="calender.Turma" name="Disciplina">
+            <select [(ngModel)]="calender.Disciplina" name="Disciplina">
                <option>Lógica</option>
                <option>Lingua Estrangeira</option>
                <option>Fundamentos de informática</option>
@@ -53,17 +53,15 @@
 
 
          <mat-form-field>
-
             <p>Selecione o Professor</p>
-            <select [(ngModel)]="calender.Professor" name="Professor">               
+            <select [(ngModel)]="calender.Professor" name="Professor">
                <option>Elias</option>
                <option>Daniel</option>
                <option>Beatrice</option>
-            </select>            
+            </select>
          </mat-form-field>
 
          <mat-form-field>
-
             <input type="date" matInput placeholder="Data" [(ngModel)]="calender.Data" name="data">
          </mat-form-field>
 
