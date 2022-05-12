@@ -53,6 +53,15 @@
       "Professor": "Beatrice",
       "Data": "2022-05-20",
       "id": 9
+    },
+    {
+      "Curso": "Técnico em Informática",
+      "Turma": "TA 12",
+      "Turno": "Tarde",
+      "Disciplina": "Lógica",
+      "Professor": "Daniel",
+      "Data": "2022-05-17",
+      "id": 10
     }
   ]
 }
