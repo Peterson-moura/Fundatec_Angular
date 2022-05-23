@@ -7,8 +7,10 @@ import { Observable } from "rxjs";
 @Injectable({
   providedIn: "root",
 })
+
+
 export class CalendarioService {
-  baseUrl = "http://localhost:3001/calender";
+  baseUrl = "http://localhost:3000/";  
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 

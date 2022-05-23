@@ -3,7 +3,7 @@ var express = require('express')
 var cors = require('cors')
 var app = express()
 var corsOptions = {
-  origin: 'http://localhost:3000/calender',
+  origin: 'http://localhost:3000/',
   optionsSuccessStatus: 200
 }
 
@@ -27,7 +27,7 @@ app.use(
 app.use(express.json())
 
 // rotas
-app.post('/calender', async (req, res) => {
+app.post('/', async (req, res) => {
   const {Curso, Turma,Turno,Disciplina,Professor,Data} = req.body
 
   const calender = {
@@ -48,7 +48,7 @@ app.post('/calender', async (req, res) => {
   }
 })
 
-app.get('/calender', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const calender = await Calender.find()
 
@@ -97,7 +97,7 @@ app.patch('/calender/:id', async (req, res) => {
       return
     }
 
-    res.status(200).json(person)
+    res.status(200).json(calender)
   } catch (error) {
     res.status(500).json({ erro: error })
   }
