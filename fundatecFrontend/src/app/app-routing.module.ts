@@ -1,3 +1,4 @@
+import { CalendarioDeleteComponent } from './components/calendario/calendario-delete/calendario-delete.component';
 import { CalendarioUpdateComponent } from './components/calendario/calendario-update/calendario-update.component';
 import { CalendarioCreateComponent } from './components/calendario/calendario-create/calendario-create.component';
 import { NgModule } from "@angular/core";
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:"calendario/update/:id",
     component: CalendarioUpdateComponent
+  },
+  {
+    path:"calendario/delete/:id",
+    component: CalendarioDeleteComponent
   }
 ];
 

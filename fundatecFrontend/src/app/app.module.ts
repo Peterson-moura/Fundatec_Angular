@@ -27,6 +27,7 @@ import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
 import { CalendarioUpdateComponent } from './components/calendario/calendario-update/calendario-update.component';
+import { CalendarioDeleteComponent } from './components/calendario/calendario-delete/calendario-delete.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CalendarioUpdateComponent } from './components/calendario/calendario-up
     CalendarioReadComponent,
     CalendarioRead2Component,
     CalendarioUpdateComponent,
+    CalendarioDeleteComponent,
   ],
   imports: [
     BrowserModule,

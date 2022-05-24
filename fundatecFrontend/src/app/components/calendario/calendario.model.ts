@@ -1,5 +1,5 @@
 export interface Calender{
-    id?: number
+    id?: string,
     Curso: String,
     Turma: String,
     Turno: String,

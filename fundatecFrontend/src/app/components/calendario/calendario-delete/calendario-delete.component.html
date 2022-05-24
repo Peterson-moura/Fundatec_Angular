@@ -1,0 +1,73 @@
+<mat-card>
+    <mat-card-title>
+       Alterar Agendamento
+       <form>
+          <mat-form-field>
+             <p>Selecione o Curso</p>
+             <select placeholder="Selecione o Curso" [value]="calender.Curso" name="Curso" disabled>
+                <option selected>Técnico em Administração</option>
+                <option>Técnico em Informática</option>
+                <option>Técnico em Enfermagem</option>
+                <option>Técnico em Segurança do Trabalho</option>
+             </select>
+          </mat-form-field>
+ 
+          <mat-form-field>
+             <p>Selecione a Turma</p>
+             <select [value]="calender.Turma" name="Turma" class="form-select" disabled>
+                <p>Selecione o Curso</p>
+                <option>TA 12</option>
+                <option>TE 16</option>
+                <option>TE 15</option>
+                <option>TE 14</option>
+                <option>TI 18</option>
+                <option>TST 6</option>
+             </select>
+          </mat-form-field>
+ 
+          <mat-form-field>
+             <p>Selecione o turno</p>
+             <select [value]="calender.Turno" name="Turno" disabled>
+                <p>Selecione o Curso</p>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+             </select>
+          </mat-form-field>
+ 
+          <mat-form-field>
+             <p>Selecione o Disciplina</p>
+             <select [value]="calender.Disciplina" name="Disciplina" disabled>
+                <option>Lógica</option>
+                <option>Lingua Estrangeira</option>
+                <option>Fundamentos de informática</option>
+                <option>Banco de Dados</option>
+                <option>Desenvolvimento Web I</option>
+             </select>
+          </mat-form-field>
+ 
+ 
+          <mat-form-field>
+             <p>Selecione o Professor</p>
+             <select [value]="calender.Professor" name="Professor" disabled>
+                <option>Elias</option>
+                <option>Daniel</option>
+                <option>Beatrice</option>
+             </select>
+          </mat-form-field>
+ 
+          <mat-form-field>
+             <input type="date" matInput placeholder="Data" [value]="calender.Data" name="data" disabled>
+          </mat-form-field>
+ 
+       </form>
+    </mat-card-title>
+ </mat-card>
+ 
+ <button mat-raised-button (click)="delete()" color="primary">
+    Deletar
+ </button>
+ 
+ <button mat-raised-button color="warn" (click)="cancel()">
+    Cancelar
+ </button>
