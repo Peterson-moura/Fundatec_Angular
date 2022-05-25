@@ -25,7 +25,7 @@ const routes: Routes = [
     component: CalendarioUpdateComponent
   },
   {
-    path:"calendario/delete/:id",
+    path:"calendario/delete",
     component: CalendarioDeleteComponent
   }
 ];

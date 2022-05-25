@@ -11,6 +11,7 @@ import { Observable } from "rxjs";
 
 export class CalendarioService {
   baseUrl = "http://localhost:3000/";
+  baseUrl2 = "http://localhost:3000/calender/"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
@@ -41,8 +42,8 @@ export class CalendarioService {
   }
 
   //deletando produto
-  delete(id: string): Observable<Calender>{
-    const url = `${this.baseUrl}/${id}`
-    return this.http.delete<Calender>(url)
+  delete(id): Observable<Calender>{
+    const url = `${this.baseUrl2}/${id}`
+    return this.http.delete<Calender>(this.baseUrl2)
   }
 }

@@ -24,7 +24,7 @@ export class CalendarioDeleteComponent implements OnInit {
       this.calender = calender;
     });
   }
-
+  
   delete(): void {
     this.calendarioService.delete(this.calender.id).subscribe(() => {
       this.calendarioService.showMessage("Agenda excluída com sucesso");
