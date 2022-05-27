@@ -17,7 +17,7 @@ export class CalendarioReadComponent implements OnInit {
   ngOnInit(): void {
     this.calendarioService.read().subscribe(calendarios=>{
       this.calendarios = calendarios
-      console.log(calendarios)
+      console.log("Funcionou" + calendarios)
     })
   }
 

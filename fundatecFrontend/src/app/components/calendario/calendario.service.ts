@@ -1,5 +1,5 @@
 import { Calender } from "./calendario.model";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpRequest } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Observable } from "rxjs";
@@ -10,6 +10,9 @@ import { Observable } from "rxjs";
 
 
 export class CalendarioService {
+
+  calender!: Calender
+
   baseUrl = "http://localhost:3000/";
   baseUrl2 = "http://localhost:3000/calender/"
 
@@ -32,7 +35,7 @@ export class CalendarioService {
   }
 
   readById(id:string | null):Observable<Calender>{
-    const url = `${this.baseUrl}/${id}`
+    const url = `${this.baseUrl2}/${id}`
  return this.http.get<Calender>(url)
   }
 
@@ -42,8 +45,9 @@ export class CalendarioService {
   }
 
   //deletando produto
-  delete(id): Observable<Calender>{
-    const url = `${this.baseUrl2}/${id}`
-    return this.http.delete<Calender>(this.baseUrl2)
+  delete(id: string): Observable<Calender>{
+   const url = `${this.baseUrl2}/${id}`
+   console.log(url)
+    return this.http.delete<Calender>(url)
   }
 }
