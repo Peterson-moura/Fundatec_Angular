@@ -60,6 +60,13 @@ app.get('/', async (req, res) => {
 
 app.get('/calender/:id', async (req, res) => {
   const id = req.params.id
+  //aqui
+  /*app.selector('id')
+  .where({id: req.params.id})
+  .first()
+  .then(iser => res.json(user))
+  .catch(err => res.status(500).send(err))
+*/
 
   try {
     const calender = await Calender.findOne({ _id: id })
@@ -73,6 +80,9 @@ app.get('/calender/:id', async (req, res) => {
   } catch (error) {
     res.status(500).json({ erro: error })
   }
+
+  //aqui
+  //return {get}
 })
 
 app.patch('/calender/:id', async (req, res) => {
@@ -93,7 +103,7 @@ app.patch('/calender/:id', async (req, res) => {
     const updatedCalender = await Calender.updateOne({ _id: id }, calender)
 
     if (updatedCalender.matchedCount === 0) {
-      res.status(422).json({ message: 'Usuário não encontrado!' })
+      res.status(422).json({ message: 'Evento não encontrado!' })
       return
     }
 
@@ -103,20 +113,20 @@ app.patch('/calender/:id', async (req, res) => {
   }
 })
 
-app.delete('/calender/:id', async (req, res) => {
+app.delete('/calender/delete/:id', async (req, res) => {
   const id = req.params.id
 
   const calender = await Calender.findOne({ _id: id })
 
   if (!calender) {
-    res.status(422).json({ message: 'Usuário não encontrado!' })
+    res.status(422).json({ message: 'Evento não encontrado!' })
     return
   }
 
   try {
     await Calender.deleteOne({ _id: id })
 
-    res.status(200).json({ message: 'Usuário removido com sucesso!' })
+    res.status(200).json({ message: 'Evento removido com sucesso!' })
   } catch (error) {
     res.status(500).json({ erro: error })
   }

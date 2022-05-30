@@ -25,12 +25,14 @@ export class CalendarioDeleteComponent implements OnInit {
     });
   }
   
+  /*
   delete(): void {
     this.calendarioService.delete(this.calender.id).subscribe(() => {
       this.calendarioService.showMessage("Agenda excluída com sucesso");
       this.router.navigate(["/calendario"]);
     });
   }
+  */
   //cancelar ação
   cancel(): void {
     this.router.navigate(["/calendario"]);

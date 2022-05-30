@@ -14,7 +14,7 @@ export class CalendarioService {
   calender!: Calender
 
   baseUrl = "http://localhost:3000/";
-  baseUrl2 = "http://localhost:3000/calender/"
+  baseUrl2 = "http://localhost:3000/calender/delete"
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
