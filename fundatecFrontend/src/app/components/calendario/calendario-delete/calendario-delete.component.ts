@@ -10,7 +10,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./calendario-delete.component.css"],
 })
 export class CalendarioDeleteComponent implements OnInit {
-  calender!: Calender
+  calender!: Calender;
 
   constructor(
     private calendarioService: CalendarioService,
@@ -24,15 +24,15 @@ export class CalendarioDeleteComponent implements OnInit {
       this.calender = calender;
     });
   }
-  
-  /*
+
+  //com id fixo deleta
   delete(): void {
-    this.calendarioService.delete(this.calender.id).subscribe(() => {
+    this.calendarioService.delete("629559ac343a272853b17e87").subscribe(() => {
       this.calendarioService.showMessage("Agenda excluída com sucesso");
       this.router.navigate(["/calendario"]);
     });
   }
-  */
+
   //cancelar ação
   cancel(): void {
     this.router.navigate(["/calendario"]);

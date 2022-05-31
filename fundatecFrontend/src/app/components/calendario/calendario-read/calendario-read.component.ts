@@ -23,13 +23,7 @@ export class CalendarioReadComponent implements OnInit {
     })
   }
 
-  //com id fixo deleta
-  delete(): void {
-    this.calendarioService.delete("629559a8343a272853b17e84").subscribe(() => {
-      this.calendarioService.showMessage("Agenda excluída com sucesso");
-      this.router.navigate(["/calendario"]);
-    });
-  }
+
   
 }
 
