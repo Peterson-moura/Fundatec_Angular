@@ -19,13 +19,29 @@ export class CalendarioReadComponent implements OnInit {
   ngOnInit(): void {
     this.calendarioService.read().subscribe((calendarios )=>{
       this.calendarios = calendarios
-      console.log(calendarios)
+      //console.log(this.calender.id)
+      for(var i=0; i<calendarios.length; i++){
+        console.log(this.calendarios[i]._id)
+      }
+      console.log("Calendários")
+      
+     
     })
   }
-
-
   
+    
+    delete(): void {
+      console.log("lixeira ")
+     // console.log(this.calender._id)
+      this.calendarioService.delete(this.calendarios[0]._id).subscribe(() => {
+        this.calendarioService.showMessage("Agenda excluída com sucesso");
+        this.router.navigate(["/calendario"]);
+      
+      });
+    }
+
 }
+
 
 /*
 ngOninit

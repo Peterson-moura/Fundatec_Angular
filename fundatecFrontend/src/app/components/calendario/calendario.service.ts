@@ -15,6 +15,7 @@ export class CalendarioService {
 
   baseUrl = "http://localhost:3000/";
   baseUrl2 = "http://localhost:3000/calender/delete"
+  baseUrl3 = 'http://localhost:3000/calender'
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
@@ -32,15 +33,17 @@ export class CalendarioService {
 
   read(): Observable<Calender[]> {
     return this.http.get<Calender[]>(this.baseUrl);
+    console.log(this.calender._id)
   }
 
-  readById(id:string | null):Observable<Calender>{
-    const url = `${this.baseUrl2}/${id}`
+  readById(id:string ):Observable<Calender>{
+    console.log(this.calender._id)
+    const url = `${this.baseUrl}/calender/${id}`
  return this.http.get<Calender>(url)
   }
 
   updated(calender: Calender): Observable<Calender>{
-    const url = `${this.baseUrl}/${calender.id}`
+    const url = `${this.baseUrl}/${calender._id}`
     return this.http.put<Calender>(url,calender)    
   }
 
