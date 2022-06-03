@@ -22,12 +22,11 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
 import { CalendarioReadComponent } from "./components/calendario/calendario-read/calendario-read.component";
-import { CalendarioRead2Component } from "./components/calendario/calendario-read2/calendario-read2.component";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
-import { CalendarioUpdateComponent } from './components/calendario/calendario-update/calendario-update.component';
-import { CalendarioDeleteComponent } from './components/calendario/calendario-delete/calendario-delete.component';
+import { CalendarioUpdateComponent } from "./components/calendario/calendario-update/calendario-update.component";
+import { CalendarioDeleteComponent } from "./components/calendario/calendario-delete/calendario-delete.component";
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { CalendarioDeleteComponent } from './components/calendario/calendario-de
     CalendarioCrudComponent,
     CalendarioCreateComponent,
     CalendarioReadComponent,
-    CalendarioRead2Component,
     CalendarioUpdateComponent,
     CalendarioDeleteComponent,
   ],
