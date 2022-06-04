@@ -13,6 +13,8 @@ export class CalendarioCrudComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //navega para a página create
+  //tras a lista com os dados do banco
   navgateToCalenderCreate(): void{
     this.router.navigate(['/calendario/create'])
   }

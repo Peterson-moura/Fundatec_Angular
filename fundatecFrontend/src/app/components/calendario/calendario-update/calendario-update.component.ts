@@ -9,7 +9,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./calendario-update.component.css"],
 })
 export class CalendarioUpdateComponent implements OnInit {
-  calender!: Calender;
+  calender: Calender;
 
   constructor(
     private calendarioService: CalendarioService,
@@ -17,6 +17,8 @@ export class CalendarioUpdateComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
+  //snapshot?
+  //paramMap?
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get("id");
     this.calendarioService.readById(id).subscribe((calender) => {

@@ -9,21 +9,28 @@ import { HomeComponent } from "./views/home/home.component";
 
 import { CalendarioCrudComponent } from "./views/calendario-crud/calendario-crud.component";
 
+//rotas para localhost:4200/
 const routes: Routes = [
   {
     path: "",
     component: HomeComponent
-  },{
+  },
+  //leva para a página de create com as infos do banco
+  {
     path:"calendario",
     component: CalendarioCrudComponent
-  },{
+  },
+  //leva para página de criação
+  {
     path:"calendario/create",
     component: CalendarioCreateComponent
   },
+  // faria um update REVER
   {
     path:"calendario/update/:id",
     component: CalendarioUpdateComponent
   },
+  //Era para chamar a página de delete, hoje fazemso a exclusão pelo read
   {
     path:"calendario/delete",
     component: CalendarioDeleteComponent

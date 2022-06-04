@@ -30,20 +30,13 @@ export class CalendarioReadComponent implements OnInit {
   ngOnInit(): void {
     this.calendarioService.read().subscribe((calendarios) => {
       this.calendarios = calendarios;
-      //console.log(this.calender.id)
-      for (var i = 0; i < calendarios.length; i++) {
-        console.log(this.calendarios[i]._id);
-      }
-      console.log("Calendários");
     });
   }
 
-  //result = array.map(person => ({ value: person.id, text: person.name }));
+ 
 
   delete(): void {
-    console.log("lixeira ");
-    this.calendarioService.delete(this.calendarios[0]._id).subscribe(() => {  //ver como puxar cada id
-      console.log(this.calendarios[1]);
+      this.calendarioService.delete(this.calendarios[0]._id).subscribe(() => {  //ver como puxar cada id
       this.calendarioService.showMessage("Agenda excluída com sucesso");
       //  this.router.navigate(["/calendario"]);
     });
@@ -61,8 +54,7 @@ export class CalendarioReadComponent implements OnInit {
       });
     }
     
-         let calendarioPercorrido = this.calendarios.find(function(calendarios) {
-      return calendarios._id === "id";
+      
     });
     console.log(calendarioPercorrido)
 */

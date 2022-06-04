@@ -1,28 +1,23 @@
 <mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap='64'>
-        <mat-nav-list class="nav-list">
-            <a mat-list-item routerLink="/">
-                <i class="material-icons">
-                    home
-                </i>
-                Início
-            </a>
-            <a mat-list-item routerLink="calendario" >
-                <i class="material-icons" >
-                    calendar_today
-                </i>
-                Calendario
-            </a>
-
-            <a mat-list-item routerLink="calendario" >
-                <i class="material-icons">
-                    class
-                </i>
-                Turma
-            </a>
-        </mat-nav-list>        
-    </mat-sidenav>
-    <mat-sidenav-content class="content">
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
+  <mat-sidenav
+    class="sidenav"
+    mode="side"
+    opened
+    fixedInViewport="true"
+    fixedTopGap="64"
+  >
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/">
+        <i class="material-icons"> home </i>
+        Início
+      </a>
+      <a mat-list-item routerLink="calendario">
+        <i class="material-icons"> calendar_today </i>
+        Calendario
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
