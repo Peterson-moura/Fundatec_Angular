@@ -32,15 +32,6 @@ export class CalendarioReadComponent implements OnInit {
       this.calendarios = calendarios;
     });
   }
-
- 
-
-  delete(): void {
-      this.calendarioService.delete(this.calendarios[0]._id).subscribe(() => {  //ver como puxar cada id
-      this.calendarioService.showMessage("Agenda excluída com sucesso");
-      //  this.router.navigate(["/calendario"]);
-    });
-  }
 }
 
 /*

@@ -4,7 +4,6 @@
     <ng-container matColumnDef="Id">
       <th mat-header-cell *matHeaderCellDef>Id</th>
       <td mat-cell *matCellDef="let row">{{ row._id }}</td>
-      
     </ng-container>
 
     <!-- Curso Column -->
@@ -47,11 +46,11 @@
     <ng-container matColumnDef="action">
       <th mat-header-cell *matHeaderCellDef>Ações</th>
       <td mat-cell *matCellDef="let row">
-        <a routerLink="/calendario/update/{{ row.id }}" class="edit">
+        <a routerLink="/calendario/update/" class="edit">
           <i class="material-icons"> edit </i>
         </a>
-        <a class="delete" > 
-          <i class="material-icons"  routerLink="" (click)="delete()" > delete </i>
+        <a class="delete" routerLink="/calendario/delete">
+          <i class="material-icons"> delete </i>
         </a>
       </td>
     </ng-container>

@@ -11,6 +11,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CalendarioDeleteComponent implements OnInit {
   calender!: Calender;
+  calendarios: Calender[]
 
   constructor(
     private calendarioService: CalendarioService,
@@ -27,14 +28,23 @@ export class CalendarioDeleteComponent implements OnInit {
 
   //com id fixo deleta
   delete(): void {
-    this.calendarioService.delete("id").subscribe(() => {
-      this.calendarioService.showMessage("Agenda excluída com sucesso");
-      this.router.navigate(["/calendario"]);
-    });
-  }
+    
+    this.calendarioService.delete(this.calendarios.forEach[0]._id).subscribe(() => {  //ver como puxar cada id
+    this.calendarioService.showMessage("Agenda excluída com sucesso");
+    this.router.navigate(["/calendario"]);
+  });
+}
 
   //cancelar ação
   cancel(): void {
     this.router.navigate(["/calendario"]);
   }
 }
+/*
+delete(): void {
+    this.calendarioService.delete("id").subscribe(() => {
+      this.calendarioService.showMessage("Agenda excluída com sucesso");
+      this.router.navigate(["/calendario"]);
+    });
+  }
+*/
