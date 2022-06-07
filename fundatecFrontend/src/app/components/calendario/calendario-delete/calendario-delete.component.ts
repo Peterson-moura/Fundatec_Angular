@@ -29,7 +29,7 @@ export class CalendarioDeleteComponent implements OnInit {
   //com id fixo deleta
   delete(): void {
     
-    this.calendarioService.delete(this.calendarios.forEach[0]._id).subscribe(() => {  //ver como puxar cada id
+    this.calendarioService.delete(this.calendarios[0]._id).subscribe(() => {  //ver como puxar cada id
     this.calendarioService.showMessage("Agenda excluída com sucesso");
     this.router.navigate(["/calendario"]);
   });

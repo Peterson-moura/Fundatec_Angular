@@ -8,8 +8,9 @@
           placeholder="Selecione o Curso"
           [(ngModel)]="calender.Curso"
           name="curso"
+          class="formulario"
         >
-          <option selected>Técnico em Administração</option>
+          <option>Técnico em Administração</option>
           <option>Técnico em Informática</option>
           <option>Técnico em Enfermagem</option>
           <option>Técnico em Segurança do Trabalho</option>
@@ -18,20 +19,26 @@
 
       <mat-form-field>
         <p>Selecione a Turma</p>
-        <select [(ngModel)]="calender.Turma" name="turma" class="form-select">
+        <select [(ngModel)]="calender.Turma" name="turma" class="formulario">
           <p>Selecione o Curso</p>
-          <option>TA 12</option>
-          <option>TE 16</option>
-          <option>TE 15</option>
-          <option>TE 14</option>
+          <option>TA 15</option>
+          <option>TA 17</option>
+          <option>TA 18</option>
+          <option>TST 02</option>
+          <option>TST 03</option>
+          <option>TST 04</option>
           <option>TI 18</option>
-          <option>TST 6</option>
+          <option>TI 19</option>
+          <option>TI 20</option>
+          <option>TE 23</option>
+          <option>TE 25</option>
+          <option>TE 26</option>
         </select>
       </mat-form-field>
 
       <mat-form-field>
         <p>Selecione o turno</p>
-        <select [(ngModel)]="calender.Turno" name="turno">
+        <select [(ngModel)]="calender.Turno" name="turno" class="formulario">
           <p>Selecione o Curso</p>
           <option>Manhã</option>
           <option>Tarde</option>
@@ -41,7 +48,11 @@
 
       <mat-form-field>
         <p>Selecione o Disciplina</p>
-        <select [(ngModel)]="calender.Disciplina" name="Disciplina">
+        <select
+          [(ngModel)]="calender.Disciplina"
+          name="Disciplina"
+          class="formulario"
+        >
           <option>Lógica</option>
           <option>Lingua Estrangeira</option>
           <option>Fundamentos de informática</option>
@@ -52,20 +63,26 @@
 
       <mat-form-field>
         <p>Selecione o Professor</p>
-        <select [(ngModel)]="calender.Professor" name="Professor">
+        <select
+          [(ngModel)]="calender.Professor"
+          name="Professor"
+          class="formulario"
+        >
           <option>Elias</option>
           <option>Daniel</option>
           <option>Beatrice</option>
         </select>
       </mat-form-field>
 
-      <mat-form-field>
+      
+      <mat-form-field appearance="fill">
         <input
           type="date"
           matInput
           placeholder="Data"
           [(ngModel)]="calender.Data"
           name="data"
+          class="formulario"
         />
       </mat-form-field>
     </form>

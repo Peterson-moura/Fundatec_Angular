@@ -19,3 +19,14 @@ select {
   padding: auto;
   margin-top: auto;
 }
+
+.formulario{
+  border-radius: 5px;
+  width: 50%;
+  display: inline-block;
+  
+}
+.formulario option{
+  text-align: left;
+ 
+}
