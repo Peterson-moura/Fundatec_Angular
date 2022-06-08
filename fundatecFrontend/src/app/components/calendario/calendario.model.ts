@@ -1,9 +1,9 @@
 export interface Calender{
     _id: string,
-    Curso: String,
-    Turma: String,
-    Turno: String,
-    Disciplina: String,
-    Professor: String,
-    Data: String,
+    Curso: string,
+    Turma: string,
+    Turno: string,
+    Disciplina: string,
+    Professor: string,
+    Data: string,
 }

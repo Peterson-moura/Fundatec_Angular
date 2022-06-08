@@ -11,6 +11,9 @@ import { Router } from "@angular/router";
 export class CalendarioReadComponent implements OnInit {
   calender!: Calender;
   calendarios: Calender[];
+
+  
+  
   displayedColumns = [
     "Id",
     "Curso",
@@ -34,10 +37,11 @@ export class CalendarioReadComponent implements OnInit {
   }
 
   //função deletar na Página read, atualmente deleta objeto na posição 0 do array
-  delete(): void {
-    this.calendarioService.delete(this.calendarios[0]._id).subscribe(() => {
+  delete(row_id:string): void {    
+      this.calendarioService.delete(row_id).subscribe(() => {
       this.calendarioService.showMessage("Agenda excluída com sucesso");
       this.router.navigate(["/calendario"]);
+      
     });
   }
 }

@@ -38,8 +38,7 @@ export class CalendarioService {
 
   //Lê a base de dados do calender
   read(): Observable<Calender[]> {
-    return this.http.get<Calender[]>(this.baseUrl);
-    console.log(this.calender._id)
+    return this.http.get<Calender[]>(this.baseUrl);    
   }
 
   //Lê por Id
