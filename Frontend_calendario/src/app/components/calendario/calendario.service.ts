@@ -7,18 +7,15 @@ import { Observable } from "rxjs";
 @Injectable({
   providedIn: "root",
 })
-
-
 export class CalendarioService {
-
-  calender!: Calender
+  calender!: Calender;
 
   //Local API get
   baseUrl = "http://localhost:3000/";
   //Local  API para deletar
-  baseUrl2 = "http://localhost:3000/calender/delete"
+  baseUrl2 = "http://localhost:3000/calender/delete";
   //Local API get
-  baseUrl3 = 'http://localhost:3000/calender'
+  baseUrl3 = "http://localhost:3000/calender";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
@@ -38,26 +35,20 @@ export class CalendarioService {
 
   //Lê a base de dados do calender
   read(): Observable<Calender[]> {
-    return this.http.get<Calender[]>(this.baseUrl);    
+    return this.http.get<Calender[]>(this.baseUrl);
   }
 
   //Lê por Id
-  readById(id:string ):Observable<Calender>{
-    console.log(this.calender._id)
-    const url = `${this.baseUrl}/${id}`
- return this.http.get<Calender>(url)
-  }
-
-  //Fazer alteraçao pelo Id
-  updated(calender: Calender): Observable<Calender>{
-    const url = `${this.baseUrl}/${calender._id}`
-    return this.http.put<Calender>(url,calender)    
+  readById(id: string): Observable<Calender> {
+    console.log(this.calender._id);
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Calender>(url);
   }
 
   //deletando produto por Id
-  delete(id: string): Observable<Calender>{
-   const url = `${this.baseUrl2}/${id}`
-   console.log(url)
-    return this.http.delete<Calender>(url)
+  delete(id: string): Observable<Calender> {
+    const url = `${this.baseUrl2}/${id}`;
+    console.log(url);
+    return this.http.delete<Calender>(url);
   }
 }

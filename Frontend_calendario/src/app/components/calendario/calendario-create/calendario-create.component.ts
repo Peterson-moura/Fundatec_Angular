@@ -1,5 +1,5 @@
-import { Calender } from "./../calendario.model";
-import { CalendarioService } from "./../calendario.service";
+import { Calender } from "../calendario.model";
+import { CalendarioService } from "../calendario.service";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
@@ -26,7 +26,7 @@ export class CalendarioCreateComponent implements OnInit {
     private router: Router
   ) {}
 
-  //buscar infos 
+  //buscar infos
   ngOnInit(): void {}
 
   //Crea o calendário e subscreve com a informação inserida,

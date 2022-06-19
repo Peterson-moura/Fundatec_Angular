@@ -1,12 +1,12 @@
-import { CalendarioService } from "./../calendario.service";
-import { Calender } from "./../calendario.model";
+import { CalendarioService } from "../calendario.service";
+import { Calender } from "../calendario.model";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
 @Component({
   selector: "app-calendario-read",
-  templateUrl: "./calendario-read.component.html",
-  styleUrls: ["./calendario-read.component.css"],
+  templateUrl: "./calendario-read-delete.component.html",
+  styleUrls: ["./calendario-read-delete.component.css"],
 })
 export class CalendarioReadComponent implements OnInit {
   calender!: Calender;
